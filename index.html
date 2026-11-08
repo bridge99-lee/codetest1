@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="창의발명 교육자 이경표의 개인 포트폴리오 — 창의성, 발명, 지식재산 교육강의 및 컨설팅" />
+  <meta name="theme-color" content="#0e1a23" />
+  <title>창의발명 이경표 | 포트폴리오</title>
+  <style>
+    :root{--bg:#0d1821;--surface:#13232c;--ink:#f3f3ed;--muted:#a5b5b8;--accent:#d9efad;--line:rgba(255,255,255,.15);--radius:24px;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--accent);color:var(--bg)}
+    .container{width:min(var(--max),calc(100% - 48px));margin-inline:auto}.skip{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:10px;z-index:20}.skip:focus{left:12px}
+    header{position:sticky;top:0;z-index:10;background:rgba(13,24,33,.89);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-size:1.1rem;font-weight:800;letter-spacing:-.045em}.brand span{color:var(--accent)}nav{display:flex;gap:28px;align-items:center}nav a{font-size:.92rem;color:#d9e1df;transition:color .2s}nav a:hover,nav a:focus{color:var(--accent)}.nav-cta{border:1px solid #6e897e;padding:9px 17px;border-radius:100px}
+    .hero{position:relative;isolation:isolate;overflow:hidden;min-height:min(780px,90svh);display:flex;align-items:center;border-bottom:1px solid var(--line)}.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 78% 38%,rgba(83,134,117,.29),transparent 37%),linear-gradient(140deg,#0d1821,#132a31 75%,#1f393a)}.hero::after{content:"";position:absolute;width:560px;height:560px;right:-180px;top:5%;z-index:-1;border:1px solid rgba(217,239,173,.18);border-radius:50%;box-shadow:0 0 0 70px rgba(217,239,173,.025),0 0 0 145px rgba(217,239,173,.025),0 0 0 220px rgba(217,239,173,.018);pointer-events:none}.hero-inner{padding:110px 0 126px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--accent);text-transform:uppercase;font-size:.81rem;font-weight:750;letter-spacing:.17em}.eyebrow:before{content:"";width:27px;height:1px;background:var(--accent)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(3.2rem,8.5vw,7rem);letter-spacing:-.085em;line-height:1.15;font-weight:800;margin:25px 0 26px;word-break:keep-all}h1 em{color:var(--accent);font-style:normal}.hero-intro{color:#cfdbd9;font-size:clamp(1.02rem,1.8vw,1.3rem);max-width:590px;word-break:keep-all}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:42px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:999px;min-height:52px;padding:12px 24px;font-weight:700;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-3px)}.primary{background:var(--accent);color:#13211c}.primary:hover{background:#ebffc6}.secondary{border:1px solid #738887;color:#f5faf4}.secondary:hover{background:rgba(255,255,255,.08)}.hero-foot{display:flex;gap:28px;flex-wrap:wrap;color:var(--muted);font-size:.86rem;margin-top:76px}.hero-foot span{display:inline-flex;align-items:center;gap:9px}.dot{width:6px;height:6px;border-radius:50%;background:var(--accent)}
+    section{padding:112px 0}.section-head{margin-bottom:42px}.section-head small{display:block;color:var(--accent);font-weight:800;letter-spacing:.17em;font-size:.78rem;margin-bottom:14px}.section-head h2{font-size:clamp(2rem,4vw,3.35rem);line-height:1.25;letter-spacing:-.06em;margin-bottom:16px;word-break:keep-all}.section-head p{color:var(--muted);max-width:650px}.about{background:#f1f1e9;color:#15232a}.about .section-head small{color:#536e45}.about .section-head p{color:#536065}.about-layout{display:grid;grid-template-columns:1fr 1.15fr;gap:70px;align-items:center}.monogram{min-height:340px;background:#dce4d5;border-radius:var(--radius);display:flex;justify-content:center;align-items:center;position:relative;overflow:hidden}.monogram span{font-weight:850;font-size:clamp(5rem,13vw,10rem);letter-spacing:-.1em;color:#244035;position:relative;z-index:2}.monogram:before{content:"";position:absolute;inset:28px;border:1px solid rgba(36,64,53,.3);border-radius:17px}.monogram:after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:#bcd0b5;left:-100px;bottom:-210px}.about-copy h3{font-size:1.35rem;letter-spacing:-.045em;margin-bottom:14px}.about-copy p{color:#4a595e;font-size:1.06rem;word-break:keep-all}.pill-wrap{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.pill{border:1px solid #c7d0c6;padding:7px 14px;border-radius:50px;color:#32453e;font-weight:650;font-size:.9rem}
+    .expertise-grid,.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.expertise-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px;min-height:290px;transition:transform .2s,border-color .2s}.expertise-card:hover,.work-card:hover{transform:translateY(-5px);border-color:#77977d}.card-num{color:var(--accent);font-size:.8rem;letter-spacing:.1em;font-weight:800}.card-symbol{display:flex;align-items:center;justify-content:center;width:56px;height:56px;margin:35px 0 20px;border:1px solid #658371;border-radius:17px;color:var(--accent);font-size:1.7rem}.expertise-card h3{font-size:1.38rem;letter-spacing:-.05em;margin-bottom:7px}.expertise-card p{color:var(--muted);font-size:.96rem;margin:0;word-break:keep-all}
+    .work{background:#13232b}.work-grid{grid-template-columns:repeat(2,1fr)}.work-card{min-height:340px;border:1px solid var(--line);border-radius:var(--radius);padding:36px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .2s,border-color .2s;background:linear-gradient(140deg,#203a3d,#192e35)}.work-card:nth-child(2){background:linear-gradient(140deg,#2f3934,#1a2f30)}.work-card .top{display:flex;justify-content:space-between;color:var(--accent);font-size:.83rem;font-weight:800;letter-spacing:.12em}.work-card .arrow{font-size:1.5rem}.work-card h3{font-size:clamp(1.7rem,3vw,2.45rem);letter-spacing:-.07em;margin:0 0 10px}.work-card p{color:#c0d1cc;max-width:380px;margin:0;word-break:keep-all}
+    .contact{background:#f1f1e9;color:#16252a}.contact .section-head small{color:#536e45}.contact .section-head p{color:#526167}.contact-panel{border-top:1px solid #b9c5c0;padding-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-item{padding:18px 0;border-bottom:1px solid #c5cfca}.contact-label{display:block;color:#687a77;font-size:.83rem;font-weight:800;letter-spacing:.08em;margin-bottom:7px}.contact-value{font-size:clamp(1.1rem,2.5vw,1.55rem);font-weight:700;letter-spacing:-.04em;overflow-wrap:anywhere}.contact-hint{color:#65736f;font-size:.86rem;margin-top:14px}.contact a{text-decoration:underline;text-underline-offset:5px}footer{padding:28px 0;background:#0b151c;color:#8fa4a5;font-size:.84rem}footer .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    .menu-toggle{display:none;background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:12px;padding:7px 12px;cursor:pointer}
+    @media(max-width:760px){.container{width:min(100% - 36px,var(--max))}.nav{min-height:68px}.menu-toggle{display:block}nav{display:none;position:absolute;top:68px;left:0;right:0;background:#0d1821;padding:20px 24px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:15px}nav.open{display:flex}nav a{display:block}.hero{min-height:640px}.hero-inner{padding:94px 0 84px}.hero-foot{margin-top:60px}.about-layout{grid-template-columns:1fr;gap:32px}.monogram{min-height:240px}.expertise-grid,.work-grid,.contact-panel{grid-template-columns:1fr}.expertise-card{min-height:245px}.card-symbol{margin:24px 0 18px}section{padding:78px 0}.work-card{min-height:270px;padding:28px}}
+
+    /* 상단 접근성 조절 버튼: 기존 디자인과 독립적으로 추가 */
+    html{font-size:100%}
+    .display-tools{display:flex;align-items:center;gap:6px;margin-left:auto;flex-shrink:0}
+    .display-tool{padding:7px 10px;min-height:36px;white-space:nowrap;border:1px solid #647b75;border-radius:9px;background:transparent;color:var(--ink);font-size:.78rem;font-weight:700;line-height:1.2;cursor:pointer;transition:background .2s,border-color .2s}
+    .display-tool:hover,.display-tool:focus-visible{background:rgba(217,239,173,.14);border-color:var(--accent)}
+    .display-tool[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#13211c}
+    /* 기본 화면은 그대로 유지하고, 어둡게 버튼을 누른 경우에만 적용 */
+    body.extra-dark{--bg:#070d12;--surface:#0b161c;--ink:#f3f3ed;--muted:#b4c5c6;--line:rgba(255,255,255,.19)}
+    body.extra-dark header{background:rgba(7,13,18,.94)}
+    body.extra-dark .hero::before{background:radial-gradient(ellipse at 78% 38%,rgba(44,87,71,.23),transparent 37%),linear-gradient(140deg,#070d12,#0a171d 75%,#102526)}
+    body.extra-dark .about,body.extra-dark .contact{background:#101c22;color:#f3f3ed}
+    body.extra-dark .about .section-head small,body.extra-dark .contact .section-head small{color:var(--accent)}
+    body.extra-dark .about .section-head p,body.extra-dark .contact .section-head p,body.extra-dark .about-copy p{color:#c0d1cc}
+    body.extra-dark .about-copy h3{color:#f3f3ed}
+    body.extra-dark .monogram{background:#20352f}
+    body.extra-dark .monogram span{color:#d9efad}
+    body.extra-dark .monogram:before{border-color:rgba(217,239,173,.3)}
+    body.extra-dark .monogram:after{background:#355344}
+    body.extra-dark .pill{border-color:#526d60;color:#d6e7d6}
+    body.extra-dark .work{background:#0a151b}
+    body.extra-dark .work-card{background:linear-gradient(140deg,#182e30,#101f27)}
+    body.extra-dark .work-card:nth-child(2){background:linear-gradient(140deg,#222e29,#112324)}
+    body.extra-dark .contact-panel,body.extra-dark .contact-item{border-color:#445b59}
+    body.extra-dark .contact-label,body.extra-dark .contact-hint{color:#a5b5b8}
+    body.extra-dark footer{background:#050a0e}
+    @media(max-width:1050px){.nav{flex-wrap:wrap;padding-block:12px}.display-tools{order:3;width:100%;justify-content:flex-end}nav{margin-left:auto}}
+    @media(max-width:760px){.nav{flex-wrap:wrap}.display-tools{order:3;width:100%;justify-content:flex-end}.menu-toggle{order:2}nav{order:4}body.extra-dark nav{background:#070d12}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 이동</a>
+<header><div class="container nav"><a class="brand" href="#home" aria-label="창의발명 이경표, 첫 화면">창의발명 <span>이경표</span></a><div class="display-tools" role="group" aria-label="화면 표시 설정"><button type="button" class="display-tool" id="font-bigger" aria-label="글씨 크게">글씨 크게</button><button type="button" class="display-tool" id="font-smaller" aria-label="글씨 작게">글씨 작게</button><button type="button" class="display-tool" id="dark-toggle" aria-pressed="false">어둡게</button></div><button type="button" class="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="메뉴 열기">☰</button><nav id="nav-menu" aria-label="주 메뉴"><a href="#about">소개</a><a href="#expertise">전문 분야</a><a href="#work">활동</a><a class="nav-cta" href="#contact">연락하기 ↗</a></nav></div></header>
+<main id="main">
+<section class="hero" id="home" aria-labelledby="hero-title"><div class="container hero-inner"><span class="eyebrow">Creative Invention & Education</span><h1 id="hero-title">창의발명<br><em>전문가를 꿈꾼다</em></h1><p class="hero-intro">창의적인 생각이 새로운 가능성이 되도록.<br>창의성, 발명, 지식재산을 연결하는 교육자 이경표입니다.</p><div class="actions"><a class="btn primary" href="#about">이경표 소개 보기 <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#work">주요 활동 살펴보기 <span aria-hidden="true">↓</span></a></div><div class="hero-foot"><span><i class="dot" aria-hidden="true"></i> 창의발명 교육자</span><span><i class="dot" aria-hidden="true"></i> 교육강의 · 컨설팅</span></div></div></section>
+<section class="about" id="about" aria-labelledby="about-title"><div class="container about-layout"><div class="monogram" role="img" aria-label="이경표 이름을 상징하는 한글 타이포그래피"><span>이경표</span></div><div><div class="section-head"><small>ABOUT ME</small><h2 id="about-title">생각을 발견하고,<br>가능성을 연결합니다.</h2></div><div class="about-copy"><h3>이경표 | 창의발명 교육자</h3><p>창의성, 발명, 지식재산을 중심으로 배움과 실천을 연결하는 데 관심을 두고 있습니다. 새로운 질문에서 출발한 아이디어가 의미 있는 가치로 발전할 수 있도록 교육과 컨설팅 활동을 이어갑니다.</p><div class="pill-wrap" aria-label="관심 분야"><span class="pill">창의성</span><span class="pill">발명</span><span class="pill">지식재산</span></div></div></div></div></section>
+<section id="expertise" aria-labelledby="expertise-title"><div class="container"><div class="section-head"><small>AREAS OF INTEREST</small><h2 id="expertise-title">세 가지 관심 분야</h2><p>질문에서 시작해 아이디어로 발전하고, 지식재산이라는 가치로 연결되는 과정에 주목합니다.</p></div><div class="expertise-grid"><article class="expertise-card"><span class="card-num">01 / CREATIVITY</span><div class="card-symbol" aria-hidden="true">✳</div><h3>창의성</h3><p>새로운 시각으로 문제를 바라보고, 질문과 탐색을 통해 다양한 가능성을 발견합니다.</p></article><article class="expertise-card"><span class="card-num">02 / INVENTION</span><div class="card-symbol" aria-hidden="true">↗</div><h3>발명</h3><p>일상에서 발견한 문제를 구체적인 아이디어와 해결의 과정으로 연결합니다.</p></article><article class="expertise-card"><span class="card-num">03 / INTELLECTUAL PROPERTY</span><div class="card-symbol" aria-hidden="true">◇</div><h3>지식재산</h3><p>창의적인 성과가 보호받고 활용되는 지식재산의 의미와 가치를 탐구합니다.</p></article></div></div></section>
+<section class="work" id="work" aria-labelledby="work-title"><div class="container"><div class="section-head"><small>WHAT I DO</small><h2 id="work-title">교육과 현장을 잇는 활동</h2><p>지식을 전달하는 일을 넘어, 새로운 관점을 발견하고 실천으로 이어지도록 돕습니다.</p></div><div class="work-grid"><article class="work-card"><div class="top"><span>01 / EDUCATION</span><span class="arrow" aria-hidden="true">↗</span></div><div><h3>교육강의</h3><p>창의성·발명·지식재산을 주제로 개념과 실제 사례를 연결하는 교육을 지향합니다.</p></div></article><article class="work-card"><div class="top"><span>02 / CONSULTING</span><span class="arrow" aria-hidden="true">↗</span></div><div><h3>컨설팅</h3><p>아이디어를 구체화하고 교육 및 실천 현장의 문제를 새로운 시각으로 검토합니다.</p></div></article></div></div></section>
+<section class="contact" id="contact" aria-labelledby="contact-title"><div class="container"><div class="section-head"><small>GET IN TOUCH</small><h2 id="contact-title">함께 나눌 이야기가 있으신가요?</h2><p>교육강의와 컨설팅에 관한 이야기를 나눌 수 있습니다.</p></div><div class="contact-panel"><div class="contact-item"><span class="contact-label">EMAIL</span><div class="contact-value" id="email-display">이메일 주소 입력 예정</div></div><div class="contact-item"><span class="contact-label">PHONE</span><div class="contact-value" id="phone-display">연락처 입력 예정</div></div></div><p class="contact-hint">※ 현재는 연락처를 공개하지 않았습니다. 페이지 하단 스크립트의 CONTACT 정보를 수정하면 이 영역이 자동으로 변경됩니다.</p></div></section>
+</main>
+<footer><div class="container"><span>© <span id="year"></span> 이경표. All rights reserved.</span><span>창의발명 이경표 · 개인 포트폴리오</span></div></footer>
+<script>
+
+  // 글씨 크기를 90%~130% 범위에서 10%씩 조절합니다.
+  // 저장 가능한 브라우저에서는 새로고침 후에도 설정을 유지합니다.
+  const STORAGE_KEY = 'creative-invention-display';
+  let fontPercent = 100;
+  let extraDark = false;
+  try {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    if (Number.isFinite(saved.fontPercent)) fontPercent = Math.max(90, Math.min(130, saved.fontPercent));
+    if (typeof saved.extraDark === 'boolean') extraDark = saved.extraDark;
+  } catch (_) { /* 저장 기능이 제한된 브라우저에서는 현재 화면에만 적용 */ }
+  function applyDisplaySettings() {
+    document.documentElement.style.fontSize = fontPercent + '%';
+    document.body.classList.toggle('extra-dark', extraDark);
+    document.querySelector('#dark-toggle').setAttribute('aria-pressed', String(extraDark));
+    document.querySelector('#dark-toggle').textContent = extraDark ? '밝게' : '어둡게';
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify({fontPercent, extraDark})); } catch (_) {}
+  }
+  document.querySelector('#font-bigger').addEventListener('click', () => {
+    fontPercent = Math.min(130, fontPercent + 10);
+    applyDisplaySettings();
+  });
+  document.querySelector('#font-smaller').addEventListener('click', () => {
+    fontPercent = Math.max(90, fontPercent - 10);
+    applyDisplaySettings();
+  });
+  document.querySelector('#dark-toggle').addEventListener('click', () => {
+    extraDark = !extraDark;
+    applyDisplaySettings();
+  });
+  applyDisplaySettings();
+  // 연락처를 실제로 공개할 때 아래 두 값만 변경하세요.
+  const CONTACT = { email: "", phone: "" };
+  const emailDisplay = document.querySelector('#email-display');
+  const phoneDisplay = document.querySelector('#phone-display');
+  if (CONTACT.email.trim()) {
+    const a = document.createElement('a'); a.href = 'mailto:' + CONTACT.email.trim(); a.textContent = CONTACT.email.trim();
+    emailDisplay.replaceChildren(a);
+  }
+  if (CONTACT.phone.trim()) {
+    const a = document.createElement('a'); a.href = 'tel:' + CONTACT.phone.replace(/[^+\d]/g, ''); a.textContent = CONTACT.phone.trim();
+    phoneDisplay.replaceChildren(a);
+  }
+  document.querySelector('#year').textContent = new Date().getFullYear();
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('#nav-menu');
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded)); toggle.setAttribute('aria-label', expanded ? '메뉴 열기' : '메뉴 닫기');
+    nav.classList.toggle('open', !expanded);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); toggle.setAttribute('aria-label','메뉴 열기');
+  }));
+</script>
+</body>
+</html>
